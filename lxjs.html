@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Redirect</title>
+    <meta http-equiv="REFRESH" content="0;url=https://github.com/R42/zd-client">
+  </head>
+  <body>
+    <p id="message">
+      You should have been redirected to 
+      <a href="https://github.com/R42/zd-client">zd-client</a>.
+    </p>
+
+    <script type="text/javascript">
+      var message = document.getElementById('message');
+      message.style.display = 'none';
+      setTimeout(function() {
+        document.getElementById('message').style.display = 'block';
+
+        window.location = 'https://github.com/R42/zd-client';
+      }, 50);
+    </script>
+    
+  </body>
+</html>
