@@ -1,0 +1,22 @@
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /blog/:year/:month/:day/:title 
+
+exclude: [".rvmrc", ".rbenv-version", "readme.md", "Rakefile", "changelog.md"]
+
+safe: true
+auto: true
+pygments: true
+baseurl: /
+
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title : R42
+tagline: 
+author :
+  name : 
+  email : 
+  github : 
+  twitter : 
+

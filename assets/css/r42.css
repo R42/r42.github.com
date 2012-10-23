@@ -1,0 +1,13 @@
+body > footer.navbar { text-align: center; margin-bottom: 0; }
+
+.name { font-family: 'Droid Sans', sans-serif; }
+
+a { margin: 0 2px; }
+a:hover { background-color: #08c; color: #fff; transition: color 1s, background-color 1s; -moz-transition: color 1s, background-color 1s; -webkit-transition: color 1s, background-color 1s; -o-transition: color 1s, background-color 1s; }
+
+@media (min-width: 979px)  {
+  body > .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
