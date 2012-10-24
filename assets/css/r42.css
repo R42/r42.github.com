@@ -9,14 +9,10 @@ body > footer.navbar { text-align: center; margin-bottom: 0; }
 
 a:hover { background-color: #08c; color: #fff; transition: color 1s, background-color 1s; -moz-transition: color 1s, background-color 1s; -webkit-transition: color 1s, background-color 1s; -o-transition: color 1s, background-color 1s; }
 
-.jumbotron {
-	background-color: #303030;
-}
-
 .masthead {
-	padding: 70px 0;
+	padding: 80px 0 0;
 	text-align: center;
-	color: white;
+	color: #666;
 }
 
 .masthead h1 {
@@ -30,6 +26,11 @@ a:hover { background-color: #08c; color: #fff; transition: color 1s, background-
 	font-weight: 700;
 	line-height: 1.25em;
 }
+
+.logo { display: inline-block; padding: 8px; font-family: sans; margin: auto; }
+.logo .c { float: left; display: block; font-size: 96px; height: 120px; line-height: 120px; text-align: center; color: #fff; -webkit-box-sizing: border-box; 	-moz-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; font-weight: 700; box-shadow: 5px 5px 0px #888, 4px 4px 0px #888, 3px 3px 0px #888, 2px 2px 0px #888, 1px 1px 0px #888; text-shadow: -3px -3px 0px #888, -2px -2px 0px #888, -1px -1px 0px #888; }
+.logo .r { width: 120px; background-color: #F66E02; margin-right: 8px; }
+.logo .n { width: 192px; background-color: #77C54D; }
 
 @media (min-width: 979px)  {
   body > .container {
