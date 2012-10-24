@@ -1,0 +1,39 @@
+body > footer.navbar { text-align: center; margin-bottom: 0; }
+
+::selection {
+	background: #ececec;
+	}
+::-moz-selection {
+	background: #ececec;
+}
+
+a:hover { background-color: #08c; color: #fff; transition: color 1s, background-color 1s; -moz-transition: color 1s, background-color 1s; -webkit-transition: color 1s, background-color 1s; -o-transition: color 1s, background-color 1s; }
+
+.jumbotron {
+	background-color: #303030;
+}
+
+.masthead {
+	padding: 70px 0;
+	text-align: center;
+	color: white;
+}
+
+.masthead h1 {
+	font-size: 95px;
+	font-weight: 700;
+	line-height: 1em;
+}
+
+.masthead p {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.25em;
+}
+
+@media (min-width: 979px)  {
+  body > .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
