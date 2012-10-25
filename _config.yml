@@ -3,7 +3,7 @@
 permalink: /:categories/:year/:month/:day/:title 
 exclude: [".rvmrc", ".rbenv-version", "Rakefile","readme.md" ,"changelog.md"]
 
-auto: true
+auto: false
 safe: false
 pygments: true
 baseurl: /
