@@ -7,9 +7,11 @@ Steps to publish:
 * Build and test the site locally
 * Pull request your changes :)
 
-* After each change to the branch something magical happens and the static files of the _master_ branch change.
-	The magical part is this
+* After each change to the branch something magic happens and the static files of the _master_ branch change.
+
+	The magic is in these commands:
 	```
 git update-ref refs/heads/master $(echo 'Add commit message here!' | git commit-tree fork-me^{tree}:_site -p $(cat .git/refs/heads/master))
+git push
 	```
 	
