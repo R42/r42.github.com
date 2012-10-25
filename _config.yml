@@ -1,11 +1,10 @@
 # This is the default format. 
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
+exclude: [".rvmrc", ".rbenv-version", "Rakefile","readme.md" ,"changelog.md"]
 
-exclude: [".rvmrc", ".rbenv-version", "readme.md", "Rakefile", "changelog.md"]
-
-safe: true
 auto: true
+safe: false
 pygments: true
 baseurl: /
 

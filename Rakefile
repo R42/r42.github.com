@@ -5,18 +5,57 @@ require 'time'
 
 SOURCE = "."
 CONFIG = {
-  'version' => "0.2.13",
+  'version' => "0.0.1",
+  'team' => File.join(SOURCE, "_team"),
   'layouts' => File.join(SOURCE, "_layouts"),
   'posts' => File.join(SOURCE, "_posts"),
   'post_ext' => "md"
 }
 
-# Usage: rake post title="A Title" [date="2012-02-09"]
+# Usage: rake member name="username"
+# You can also specify a sub-directory path.
+# If you don't specify a file extention we create an index.html at the path specified
+desc "Create a new member."
+task :member do
+  name = ENV["name"] || "sample-person.md"
+  slug = name.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  
+  filename = File.join(CONFIG['team'], "#{slug}.yml")
+  if File.exist?(filename)
+    abort("rake aborted!") if ask("#{slug} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+  end
+  
+  mkdir_p File.dirname(filename)
+  puts "Creating new member: #{filename}"
+  open(filename, 'w') do |member|
+    member.puts "active: true"
+    member.puts "bio: This is a sample person's bio."
+    member.puts "email: sample@person.com"
+    member.puts "github: sampleperson"
+    member.puts "image:"
+    member.puts "  url: /url/to/sample-person.jpg"
+    member.puts "  title: Sample Person"
+    member.puts "  alt: Sample Person"
+    member.puts "  attribution:"
+    member.puts "layout: profile"
+    member.puts "linkedin: sampleperson"
+    member.puts "name: Sample Person"
+    member.puts 'short: <a href="/team/sample-person">Sample Person</a> is the founder and CEO of the company.'
+    member.puts "twitter: sampleperson"
+    member.puts "type: member"
+    member.puts "website: http://sampleperson.com/"
+  end
+end # task :member
+
+
+# Usage: rake post title="A Title" author="username" [date="2012-02-09"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
   slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  author = ENV['author']
+
   begin
     date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
   rescue Exception => e
@@ -36,38 +75,10 @@ task :post do
     post.puts 'description: ""'
     post.puts 'category: "posts"'
     post.puts "tags: []"
+    post.puts "author: \"#{author}\""
     post.puts "---"
   end
 end # task :post
-
-# Usage: rake hangout title="A Title" [date="2012-02-09"]
-desc "Begin a new hangout in #{CONFIG['posts']}"
-task :hangout do
-  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
-  title = ENV["title"] || "new-hangout"
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  begin
-    date = (ENV['date'] ? Time.parse(ENV['date']) : Time.now).strftime('%Y-%m-%d')
-  rescue Exception => e
-    puts "Error - date format must be YYYY-MM-DD, please check you typed it correctly!"
-    exit -1
-  end
-  filename = File.join(CONFIG['posts'], "#{date}-#{slug}.#{CONFIG['post_ext']}")
-  if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
-  end
-  
-  puts "Creating new hagout: #{filename}"
-  open(filename, 'w') do |hangout|
-    hangout.puts "---"
-    hangout.puts "layout: hangout"
-    hangout.puts "title: \"#{title.gsub(/-/,' ')}\""
-    hangout.puts 'description: ""'
-    hangout.puts 'category: "hangouts"'
-    hangout.puts "tags: []"
-    hangout.puts "---"
-  end
-end # task :hangout
 
 # Usage: rake page name="about.html"
 # You can also specify a sub-directory path.
@@ -90,7 +101,6 @@ task :page do
     post.puts "title: \"#{title}\""
     post.puts 'description: ""'
     post.puts "---"
-    post.puts "{% include JB/setup %}"
   end
 end # task :page
 
