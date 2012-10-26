@@ -1,0 +1,21 @@
+---
+layout: page
+---
+
+<div id="profile" class="row">
+	<div class="span3">
+		{% if page.image %}
+			<div class="thumbnail">
+				<img src="{{ page.image.url }}" title="{{ page.image.title }}" alt="{{ page.image.alt }}" />
+			</div>
+		{% endif %}
+	</div>
+
+	<div class="span9">
+    <h1>
+      {{ page.name }}
+    </h1>
+
+    {{ page.bio }}
+  </div>
+</div>

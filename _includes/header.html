@@ -1,0 +1,25 @@
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <nav class="container">
+      <ul class="nav">
+        <li><a href="{{ site.url }}/"><i class="icon-home"></i> home</a></li>
+        {% if page.nav == "posts"%}
+        <li class="active"><a href="{{ site.url }}/posts/"><i class="icon-pencil"></i> posts</a></li>
+        {% else %}
+        <li><a href="{{ site.url }}/posts/"><i class="icon-pencil"></i> posts</a></li>
+        {% endif %}
+        <li><a href="https://github.com/r42"><i class="icon-github"></i> projects</a></li>
+        {% if page.nav == "members"%}
+        <li class="active"><a href="{{ site.url }}/members/"><i class="icon-group"></i> members</a></li>
+        {% else %}
+        <li><a href="{{ site.url }}/members/"><i class="icon-group"></i> members</a></li>
+        {% endif %}
+        {% if page.nav == "about" %}
+        <li class="active"><a href="{{ site.url }}/about/"><i class="icon-user"></i> about</a></li>
+        {% else %}
+        <li><a href="{{ site.url }}/about/"><i class="icon-user"></i> about</a></li>
+        {% endif %}
+      </ul>
+    </nav>
+  </div>
+</header>
