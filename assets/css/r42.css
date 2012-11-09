@@ -36,7 +36,7 @@ a:hover { background-color: #08c; color: #fff; transition: color 1s, background-
 
 .logo { display: inline-block; padding: 8px; font-family: sans; margin: auto; }
 .logo .c { float: left; display: block; font-size: 96px; height: 120px; line-height: 120px; text-align: center; color: #fff; -webkit-box-sizing: border-box; 	-moz-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; font-weight: 700; }
-.logo .r { width: 120px; background-color: #999999; margin-right: 8px; }
+.logo .r { width: 120px; background-color: ##DB0D0D; margin-right: 8px; }
 .logo .n { width: 192px; background-color: #77C54D; }
 
 @media (min-width: 979px)  {
