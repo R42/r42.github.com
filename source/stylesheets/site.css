@@ -9,8 +9,6 @@ a:hover { color: #fff; background-color: #c92c2c; }
 .logo .left { color: #c92c2c; }
 .logo .right { color: #774f38; }
 
-
-
 .main-header h1 {  margin: 0; }
 .main-header .container { position: relative; }
 .main-header .container .teaser { position: absolute; top: 5px; right: 5px; }
@@ -18,8 +16,8 @@ a:hover { color: #fff; background-color: #c92c2c; }
 
 .post { border-top: 1px solid #ececec; }
 .post:first-child { border-top: none; }
-.post i { display: none; }
-.post a:hover i { display: inline-block; }
+.post i { visibility: hidden; }
+.post a:hover i { visibility: visible; }
 
 .person { width: 10%; opacity: .5; padding: 0; }
 .person:hover { opacity: 1; }
