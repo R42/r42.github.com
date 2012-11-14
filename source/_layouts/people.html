@@ -2,9 +2,10 @@
 layout: page
 ---
 
-<div id="people" class="row">
+<div id="people" class="row col">
+  <h2>Join us</h2>
   {% for person in page.people %}
-  <div class="col person">
+  <div class="person">
     <a href="{{ site.root }}/people/{{ person[0] }}">
       <img title="{{ person[1].image.title }}" src="{{ person[1].image.url }}" alt="{{ person[1].image.alt }}">
     </a>

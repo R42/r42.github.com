@@ -2,9 +2,9 @@
 layout: page
 ---
 
-<div id="posts">
+<div id="posts" class="row col">
   {% if site.posts.size == 0 %}
-  <p>Please come back later and you may have luck.</p>
+    <p>Please come back later and you may have luck.</p>
   {% else %}
   {% for post in site.posts %}
   <section class="post">
