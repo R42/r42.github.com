@@ -1,0 +1,1251 @@
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 7/8/9, Firefox 3,
+ * and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+
+[hidden] {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Corrects text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/*
+ * Addresses `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+/*
+ * Addresses margins handled incorrectly in IE 6/7.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses font sizes and margins set differently in IE 6/7.
+ * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+}
+
+/*
+ * Addresses styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 6/7/8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+/*
+ * Corrects font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/*
+ * Addresses CSS quotes not supported in IE 6/7.
+ */
+
+q {
+    quotes: none;
+}
+
+/*
+ * Addresses `quotes` property not supported in Safari 4.
+ */
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/*
+ * Addresses margins set differently in IE 6/7.
+ */
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+/*
+ * Addresses paddings set differently in IE 6/7.
+ */
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+/*
+ * Corrects list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Removes border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improves image quality when scaled in IE 7.
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Corrects margin displayed oddly in IE 6/7.
+ */
+
+form {
+    margin: 0;
+}
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 6/7/8/9.
+ * 2. Corrects text not wrapping in Firefox 3.
+ * 3. Corrects alignment displayed oddly in IE 6/7.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * Addresses Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Removes inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible;  /* 4 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to content-box in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ * 3. Removes excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 3+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*  Font Awesome
+    the iconic font designed for use with Twitter Bootstrap
+    -------------------------------------------------------
+    The full suite of pictographic icons, examples, and documentation
+    can be found at: http://fortawesome.github.com/Font-Awesome/
+
+    License
+    -------------------------------------------------------
+    The Font Awesome webfont, CSS, and LESS files are licensed under CC BY 3.0:
+    http://creativecommons.org/licenses/by/3.0/ A mention of
+    'Font Awesome - http://fortawesome.github.com/Font-Awesome' in human-readable
+    source code is considered acceptable attribution (most common on the web).
+    If human readable source code is not available to the end user, a mention in
+    an 'About' or 'Credits' screen is considered acceptable (most common in desktop
+    or mobile software).
+
+    Contact
+    -------------------------------------------------------
+    Email: dave@davegandy.com
+    Twitter: http://twitter.com/fortaweso_me
+    Work: http://lemonwi.se co-founder
+
+    */
+@font-face {
+  font-family: "FontAwesome";
+  src: url('/fonts/fontawesome-webfont.eot');
+  src: url('/fonts/fontawesome-webfont.eot?#iefix') format('eot'), url('/fonts/fontawesome-webfont.woff') format('woff'), url('/fonts/fontawesome-webfont.ttf') format('truetype'), url('/fonts/fontawesome-webfont.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+}
+a [class^="icon-"], a [class*=" icon-"] {
+  display: inline-block;
+  text-decoration: inherit;
+}
+/* makes the font 33% larger relative to the icon container */
+.icon-large:before {
+  vertical-align: top;
+  font-size: 1.3333333333333333em;
+}
+.btn [class^="icon-"], .btn [class*=" icon-"] {
+  /* keeps button heights with and without icons the same */
+
+  line-height: .9em;
+}
+li [class^="icon-"], li [class*=" icon-"] {
+  display: inline-block;
+  width: 1.25em;
+  text-align: center;
+}
+li .icon-large[class^="icon-"], li .icon-large[class*=" icon-"] {
+  /* 1.5 increased font size for icon-large * 1.25 width */
+
+  width: 1.875em;
+}
+li[class^="icon-"], li[class*=" icon-"] {
+  margin-left: 0;
+  list-style-type: none;
+}
+li[class^="icon-"]:before, li[class*=" icon-"]:before {
+  text-indent: -2em;
+  text-align: center;
+}
+li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
+  text-indent: -1.3333333333333333em;
+}
+/*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+    readers do not read off random characters that represent icons */
+.icon-glass:before                { content: "\f000"; }
+.icon-music:before                { content: "\f001"; }
+.icon-search:before               { content: "\f002"; }
+.icon-envelope:before             { content: "\f003"; }
+.icon-heart:before                { content: "\f004"; }
+.icon-star:before                 { content: "\f005"; }
+.icon-star-empty:before           { content: "\f006"; }
+.icon-user:before                 { content: "\f007"; }
+.icon-film:before                 { content: "\f008"; }
+.icon-th-large:before             { content: "\f009"; }
+.icon-th:before                   { content: "\f00a"; }
+.icon-th-list:before              { content: "\f00b"; }
+.icon-ok:before                   { content: "\f00c"; }
+.icon-remove:before               { content: "\f00d"; }
+.icon-zoom-in:before              { content: "\f00e"; }
+
+.icon-zoom-out:before             { content: "\f010"; }
+.icon-off:before                  { content: "\f011"; }
+.icon-signal:before               { content: "\f012"; }
+.icon-cog:before                  { content: "\f013"; }
+.icon-trash:before                { content: "\f014"; }
+.icon-home:before                 { content: "\f015"; }
+.icon-file:before                 { content: "\f016"; }
+.icon-time:before                 { content: "\f017"; }
+.icon-road:before                 { content: "\f018"; }
+.icon-download-alt:before         { content: "\f019"; }
+.icon-download:before             { content: "\f01a"; }
+.icon-upload:before               { content: "\f01b"; }
+.icon-inbox:before                { content: "\f01c"; }
+.icon-play-circle:before          { content: "\f01d"; }
+.icon-repeat:before               { content: "\f01e"; }
+
+/* \f020 doesn't work in Safari. all shifted one down */
+.icon-refresh:before              { content: "\f021"; }
+.icon-list-alt:before             { content: "\f022"; }
+.icon-lock:before                 { content: "\f023"; }
+.icon-flag:before                 { content: "\f024"; }
+.icon-headphones:before           { content: "\f025"; }
+.icon-volume-off:before           { content: "\f026"; }
+.icon-volume-down:before          { content: "\f027"; }
+.icon-volume-up:before            { content: "\f028"; }
+.icon-qrcode:before               { content: "\f029"; }
+.icon-barcode:before              { content: "\f02a"; }
+.icon-tag:before                  { content: "\f02b"; }
+.icon-tags:before                 { content: "\f02c"; }
+.icon-book:before                 { content: "\f02d"; }
+.icon-bookmark:before             { content: "\f02e"; }
+.icon-print:before                { content: "\f02f"; }
+
+.icon-camera:before               { content: "\f030"; }
+.icon-font:before                 { content: "\f031"; }
+.icon-bold:before                 { content: "\f032"; }
+.icon-italic:before               { content: "\f033"; }
+.icon-text-height:before          { content: "\f034"; }
+.icon-text-width:before           { content: "\f035"; }
+.icon-align-left:before           { content: "\f036"; }
+.icon-align-center:before         { content: "\f037"; }
+.icon-align-right:before          { content: "\f038"; }
+.icon-align-justify:before        { content: "\f039"; }
+.icon-list:before                 { content: "\f03a"; }
+.icon-indent-left:before          { content: "\f03b"; }
+.icon-indent-right:before         { content: "\f03c"; }
+.icon-facetime-video:before       { content: "\f03d"; }
+.icon-picture:before              { content: "\f03e"; }
+
+.icon-pencil:before               { content: "\f040"; }
+.icon-map-marker:before           { content: "\f041"; }
+.icon-adjust:before               { content: "\f042"; }
+.icon-tint:before                 { content: "\f043"; }
+.icon-edit:before                 { content: "\f044"; }
+.icon-share:before                { content: "\f045"; }
+.icon-check:before                { content: "\f046"; }
+.icon-move:before                 { content: "\f047"; }
+.icon-step-backward:before        { content: "\f048"; }
+.icon-fast-backward:before        { content: "\f049"; }
+.icon-backward:before             { content: "\f04a"; }
+.icon-play:before                 { content: "\f04b"; }
+.icon-pause:before                { content: "\f04c"; }
+.icon-stop:before                 { content: "\f04d"; }
+.icon-forward:before              { content: "\f04e"; }
+
+.icon-fast-forward:before         { content: "\f050"; }
+.icon-step-forward:before         { content: "\f051"; }
+.icon-eject:before                { content: "\f052"; }
+.icon-chevron-left:before         { content: "\f053"; }
+.icon-chevron-right:before        { content: "\f054"; }
+.icon-plus-sign:before            { content: "\f055"; }
+.icon-minus-sign:before           { content: "\f056"; }
+.icon-remove-sign:before          { content: "\f057"; }
+.icon-ok-sign:before              { content: "\f058"; }
+.icon-question-sign:before        { content: "\f059"; }
+.icon-info-sign:before            { content: "\f05a"; }
+.icon-screenshot:before           { content: "\f05b"; }
+.icon-remove-circle:before        { content: "\f05c"; }
+.icon-ok-circle:before            { content: "\f05d"; }
+.icon-ban-circle:before           { content: "\f05e"; }
+
+.icon-arrow-left:before           { content: "\f060"; }
+.icon-arrow-right:before          { content: "\f061"; }
+.icon-arrow-up:before             { content: "\f062"; }
+.icon-arrow-down:before           { content: "\f063"; }
+.icon-share-alt:before            { content: "\f064"; }
+.icon-resize-full:before          { content: "\f065"; }
+.icon-resize-small:before         { content: "\f066"; }
+.icon-plus:before                 { content: "\f067"; }
+.icon-minus:before                { content: "\f068"; }
+.icon-asterisk:before             { content: "\f069"; }
+.icon-exclamation-sign:before     { content: "\f06a"; }
+.icon-gift:before                 { content: "\f06b"; }
+.icon-leaf:before                 { content: "\f06c"; }
+.icon-fire:before                 { content: "\f06d"; }
+.icon-eye-open:before             { content: "\f06e"; }
+
+.icon-eye-close:before            { content: "\f070"; }
+.icon-warning-sign:before         { content: "\f071"; }
+.icon-plane:before                { content: "\f072"; }
+.icon-calendar:before             { content: "\f073"; }
+.icon-random:before               { content: "\f074"; }
+.icon-comment:before              { content: "\f075"; }
+.icon-magnet:before               { content: "\f076"; }
+.icon-chevron-up:before           { content: "\f077"; }
+.icon-chevron-down:before         { content: "\f078"; }
+.icon-retweet:before              { content: "\f079"; }
+.icon-shopping-cart:before        { content: "\f07a"; }
+.icon-folder-close:before         { content: "\f07b"; }
+.icon-folder-open:before          { content: "\f07c"; }
+.icon-resize-vertical:before      { content: "\f07d"; }
+.icon-resize-horizontal:before    { content: "\f07e"; }
+
+.icon-bar-chart:before            { content: "\f080"; }
+.icon-twitter-sign:before         { content: "\f081"; }
+.icon-facebook-sign:before        { content: "\f082"; }
+.icon-camera-retro:before         { content: "\f083"; }
+.icon-key:before                  { content: "\f084"; }
+.icon-cogs:before                 { content: "\f085"; }
+.icon-comments:before             { content: "\f086"; }
+.icon-thumbs-up:before            { content: "\f087"; }
+.icon-thumbs-down:before          { content: "\f088"; }
+.icon-star-half:before            { content: "\f089"; }
+.icon-heart-empty:before          { content: "\f08a"; }
+.icon-signout:before              { content: "\f08b"; }
+.icon-linkedin-sign:before        { content: "\f08c"; }
+.icon-pushpin:before              { content: "\f08d"; }
+.icon-external-link:before        { content: "\f08e"; }
+
+.icon-signin:before               { content: "\f090"; }
+.icon-trophy:before               { content: "\f091"; }
+.icon-github-sign:before          { content: "\f092"; }
+.icon-upload-alt:before           { content: "\f093"; }
+.icon-lemon:before                { content: "\f094"; }
+.icon-phone:before                { content: "\f095"; }
+.icon-check-empty:before          { content: "\f096"; }
+.icon-bookmark-empty:before       { content: "\f097"; }
+.icon-phone-sign:before           { content: "\f098"; }
+.icon-twitter:before              { content: "\f099"; }
+.icon-facebook:before             { content: "\f09a"; }
+.icon-github:before               { content: "\f09b"; }
+.icon-unlock:before               { content: "\f09c"; }
+.icon-credit-card:before          { content: "\f09d"; }
+.icon-rss:before                  { content: "\f09e"; }
+
+.icon-hdd:before                  { content: "\f0a0"; }
+.icon-bullhorn:before             { content: "\f0a1"; }
+.icon-bell:before                 { content: "\f0a2"; }
+.icon-certificate:before          { content: "\f0a3"; }
+.icon-hand-right:before           { content: "\f0a4"; }
+.icon-hand-left:before            { content: "\f0a5"; }
+.icon-hand-up:before              { content: "\f0a6"; }
+.icon-hand-down:before            { content: "\f0a7"; }
+.icon-circle-arrow-left:before    { content: "\f0a8"; }
+.icon-circle-arrow-right:before   { content: "\f0a9"; }
+.icon-circle-arrow-up:before      { content: "\f0aa"; }
+.icon-circle-arrow-down:before    { content: "\f0ab"; }
+.icon-globe:before                { content: "\f0ac"; }
+.icon-wrench:before               { content: "\f0ad"; }
+.icon-tasks:before                { content: "\f0ae"; }
+
+.icon-filter:before               { content: "\f0b0"; }
+.icon-briefcase:before            { content: "\f0b1"; }
+.icon-fullscreen:before           { content: "\f0b2"; }
+
+.icon-group:before                { content: "\f0c0"; }
+.icon-link:before                 { content: "\f0c1"; }
+.icon-cloud:before                { content: "\f0c2"; }
+.icon-beaker:before               { content: "\f0c3"; }
+.icon-cut:before                  { content: "\f0c4"; }
+.icon-copy:before                 { content: "\f0c5"; }
+.icon-paper-clip:before           { content: "\f0c6"; }
+.icon-save:before                 { content: "\f0c7"; }
+.icon-sign-blank:before           { content: "\f0c8"; }
+.icon-reorder:before              { content: "\f0c9"; }
+.icon-list-ul:before              { content: "\f0ca"; }
+.icon-list-ol:before              { content: "\f0cb"; }
+.icon-strikethrough:before        { content: "\f0cc"; }
+.icon-underline:before            { content: "\f0cd"; }
+.icon-table:before                { content: "\f0ce"; }
+
+.icon-magic:before                { content: "\f0d0"; }
+.icon-truck:before                { content: "\f0d1"; }
+.icon-pinterest:before            { content: "\f0d2"; }
+.icon-pinterest-sign:before       { content: "\f0d3"; }
+.icon-google-plus-sign:before     { content: "\f0d4"; }
+.icon-google-plus:before          { content: "\f0d5"; }
+.icon-money:before                { content: "\f0d6"; }
+.icon-caret-down:before           { content: "\f0d7"; }
+.icon-caret-up:before             { content: "\f0d8"; }
+.icon-caret-left:before           { content: "\f0d9"; }
+.icon-caret-right:before          { content: "\f0da"; }
+.icon-columns:before              { content: "\f0db"; }
+.icon-sort:before                 { content: "\f0dc"; }
+.icon-sort-down:before            { content: "\f0dd"; }
+.icon-sort-up:before              { content: "\f0de"; }
+
+.icon-envelope-alt:before         { content: "\f0e0"; }
+.icon-linkedin:before             { content: "\f0e1"; }
+.icon-undo:before                 { content: "\f0e2"; }
+.icon-legal:before                { content: "\f0e3"; }
+.icon-dashboard:before            { content: "\f0e4"; }
+.icon-comment-alt:before          { content: "\f0e5"; }
+.icon-comments-alt:before         { content: "\f0e6"; }
+.icon-bolt:before                 { content: "\f0e7"; }
+.icon-sitemap:before              { content: "\f0e8"; }
+.icon-umbrella:before             { content: "\f0e9"; }
+.icon-paste:before                { content: "\f0ea"; }
+
+.icon-user-md:before              { content: "\f200"; }
+/* Dead Simple Grid (c) 2012 Vladimir Agafonkin */
+
+.col {
+  padding: 0 1.5em;
+}
+.row .row {
+  margin: 0 -1.5em;
+}
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+@media only screen {
+  .col {
+    float: left;
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+}
+a {
+  color: #06f;
+}
+h1 {
+  font-size: 2.2em;
+}
+h2 {
+  font-size: 1.4em;
+}
+h2, h3, h4 {
+  margin-top: 0;
+}
+h3, h4 {
+  margin-bottom: 0.5em;
+}
+
+p, ul {
+  font-size: 0.8125em;
+  line-height: 1.5;
+  margin: 0 0 1.5em;
+}
+code {
+  font-size: 1.2727em;
+  color: #777;
+}
+iframe {
+  border: 0;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90em;
+  padding: 1em 0;
+}
+
+.footer {
+  padding-top: 1.5em;
+}
+.desc {
+  color: #888;
+}
+.intro {
+  border-bottom: 1px dotted #bbb;
+  padding-bottom: 1.5em;
+}
+.social {
+  border-top: 1px dotted #bbb;
+  padding-top: 1.5em;
+}
+
+/* minor responsive adjustments */
+
+.footer {
+  border-top: 1px dotted #aaa;
+}
+.content {
+  border-bottom: 1px dotted #aaa;
+  margin-bottom: 1.5em;
+}
+
+@media only screen and (min-width: 34em) {
+  p, ul {
+    font-size: 0.875em;
+  }
+  .feature:first-child,
+  .info:first-child {
+    border-right: 1px dotted #aaa;
+  }
+  .container {
+    padding: 1em;
+  }
+  h1 {
+    font-size: 2.6em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (min-width: 54em) {
+  .content {
+    border: none;
+    border-right: 1px dotted #aaa;
+    margin-bottom: 0;
+  }
+  .info:first-child {
+    border: none;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+}
+
+@media only screen and (min-width: 76em) {
+  .info:first-child {
+    border-right: 1px dotted #aaa;
+  }
+  h1 {
+    font-size: 3.2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+}a { color: #c92c2c; text-decoration: none; display: inline-block; }
+a:hover { color: #fff; background-color: #c92c2c; }
+
+.container { max-width: 50em; }
+.logo { overflow: hidden; position:relative; display: inline-block; }
+.logo span { float: left; height: 2em; text-align: center; line-height: 2em; }
+.logo:hover span { color: white; }
+
+.logo .left { color: #c92c2c; }
+.logo .right { color: #774f38; }
+
+
+
+.main-header h1 {  margin: 0; }
+.main-header .container { position: relative; }
+.main-header .container .teaser { position: absolute; top: 5px; right: 5px; }
+.main-header .container .teaser p { margin: 0; text-align: right; }
+
+.post { border-top: 1px solid #ececec; }
+.post:first-child { border-top: none; }
+.post i { display: none; }
+.post a:hover i { display: inline-block; }
+
+.person { width: 10%; opacity: .5; padding: 0; }
+.person:hover { opacity: 1; }
+.person img { width: 100%; }
+
+.main-footer .container { border-top: 1px solid #ececec; }
+.main-footer .container p { margin: 0; }/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
