@@ -14,6 +14,7 @@ permalink: /blog/:year/:month/:day/:title
 
 social:
   twitter: _r42
+  github: R42
 
 # Plugins
 asset_bundler:
