@@ -16,6 +16,9 @@ social:
   twitter: _r42
   github: R42
 
+analytics:
+  id: UA-36355112-1
+
 # Plugins
 asset_bundler:
   compress:
