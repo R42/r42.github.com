@@ -107,7 +107,7 @@ module Jekyll
             data = YAML.load(File.read(File.join(site['source'], '_people', "#{name}.yml")))
             
             data['url'] = "/people/#{name}"
-            data['author'] = author
+            data['alias'] = author
             template = File.read(File.join(site['source'], '_includes', 'author.html'))
 
             output << Liquid::Template.parse(template).render('author' => data)
