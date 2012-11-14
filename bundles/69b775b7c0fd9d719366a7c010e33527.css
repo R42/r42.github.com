@@ -1163,8 +1163,7 @@ h1, h2 { color: #c92c2c; }
 .post i { visibility: hidden; }
 .post a:hover i { visibility: visible; }
 
-.person { width: 10%; opacity: .5; padding: 0; }
-.person:hover { opacity: 1; }
+.person { width: 10%; padding: 0; }
 .person img { width: 100%; }
 
 .main-footer .container { border-top: 1px solid #ececec; }
@@ -1174,12 +1173,17 @@ h1, h2 { color: #c92c2c; }
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 34em) {
-  
+
+@media only screen and (max-width: 34em) {
+  .person { width: 25%; }
 }
 
-@media only screen and (min-width: 54em) {
-  
+@media only screen and (min-width: 34em) and (max-width: 54em) {
+  .person { width: 20%; }
+}
+
+@media only screen and (min-width: 54em) and (max-width: 74em) {
+  .person { width: 12.5%; }
 }
 
 @media only screen and (min-width: 76em) {
