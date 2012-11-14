@@ -4,8 +4,16 @@
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 34em) {
+  
+}
+
+@media only screen and (min-width: 54em) {
+  
+}
+
+@media only screen and (min-width: 76em) {
+  
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
