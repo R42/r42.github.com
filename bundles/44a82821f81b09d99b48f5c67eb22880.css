@@ -534,12 +534,12 @@ body {
  */
 
 ::-moz-selection {
-    background: #cc6666;
+    background: #ffcccc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #cc6666;
+    background: #ffcccc;
     text-shadow: none;
 }
 
