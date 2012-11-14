@@ -1139,8 +1139,13 @@ iframe {
 a:hover { color: #fff; background-color: #c92c2c; }
 
 section { padding: 1em 0; }
+h1, h2 { color: #c92c2c; }
 
 .container { max-width: 50em; }
+
+.tablet { visibility: hidden; }
+.desktop { visibility: hidden; }
+
 .logo { overflow: hidden; position:relative; display: inline-block; }
 .logo span { float: left; height: 2em; text-align: center; line-height: 2em; }
 .logo:hover span { color: white; }
@@ -1150,7 +1155,7 @@ section { padding: 1em 0; }
 
 .main-header h1 {  margin: 0; }
 .main-header .container { position: relative; }
-.main-header .container .teaser { position: absolute; top: 1em; right: 1em; }
+.main-header .container .teaser { position: absolute; top: 1em; right: 1em; width: 15em; }
 .main-header .container .teaser p { margin: 0; text-align: right; }
 
 .post { border-top: 1px solid #ececec; }
@@ -1169,8 +1174,16 @@ section { padding: 1em 0; }
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 34em) {
+  
+}
+
+@media only screen and (min-width: 54em) {
+  
+}
+
+@media only screen and (min-width: 76em) {
+  
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
