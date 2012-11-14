@@ -4,7 +4,7 @@ a:hover { color: #fff; background-color: #c92c2c; }
 img { width: 100%; }
 h1, h2 { color: #c92c2c; }
 
-.container { max-width: 50em; overflow: hidden; }
+.container { max-width: 50em; overflow: hidden; position: relative; }
 
 .logo { overflow: hidden; position:relative; display: inline-block; }
 .logo span { float: left; height: 2em; text-align: center; line-height: 2em; }
