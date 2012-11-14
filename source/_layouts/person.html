@@ -3,14 +3,20 @@ layout: page
 ---
 
 <div id="person" class="row col instapaper">
-  <h1>
+  <div class="person-header">
+    <h1>
       {{ page.name }}
-  </h1>
+    </h1>
+  </div>
   <div class="row">
-    <div class="col content">
-     Bio
+    <div class="col person-content">
+      {% if page.bio %}
+      {{ page.bio }}
+      {% else %}
+      I am very shy and don't want to share my bio. 
+      {% endif %}
     </div>
-    <div class="col sidebar">
+    <div class="col person-sidebar">
       {% if page.image %}
         <img title="{{ page.image.title }}" src="{{ page.image.url }}" alt="{{ page.image.alt }}">
       {% endif %}
