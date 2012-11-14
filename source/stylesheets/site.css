@@ -1,8 +1,7 @@
-a { color: #c92c2c; text-decoration: none; }
+a { color: #c92c2c; text-decoration: none; display: inline-block; }
 a:hover { color: #fff; background-color: #c92c2c; }
 
 .container { max-width: 50em; }
-
 .logo { overflow: hidden; position:relative; display: inline-block; }
 .logo span { float: left; height: 2em; text-align: center; line-height: 2em; }
 .logo:hover span { color: white; }
@@ -19,8 +18,8 @@ a:hover { color: #fff; background-color: #c92c2c; }
 
 .post { border-top: 1px solid #ececec; }
 .post:first-child { border-top: none; }
-.post i { visibility: hidden; }
-.post a:hover i { visibility: visible; }
+.post i { display: none; }
+.post a:hover i { display: inline-block; }
 
 .person { width: 10%; opacity: .5; padding: 0; }
 .person:hover { opacity: 1; }
