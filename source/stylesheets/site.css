@@ -16,8 +16,8 @@ a:hover { color: #fff; background-color: #c92c2c; }
 
 .post { border-top: 1px solid #ececec; padding: 1em 0; }
 .post:first-child { border-top: none; }
-.post i { display: none; }
-.post a:hover i { display: inline-block; }
+.post i { visibility: hidden; }
+.post a:hover i { visibility: visible; }
 
 .person { width: 10%; opacity: .5; padding: 0; }
 .person:hover { opacity: 1; }

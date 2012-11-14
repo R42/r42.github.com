@@ -1,4 +1,3 @@
-
 baseurl: /
 safe: false
 auto: false
@@ -12,6 +11,10 @@ author: R42
 email: hi@r42.in
 description: fun comes first
 permalink: /blog/:year/:month/:day/:title
+
+social:
+  twitter: _r42
+  github: R42
 
 # Plugins
 asset_bundler:
