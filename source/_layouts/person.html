@@ -2,15 +2,18 @@
 layout: page
 ---
 
-<div id="person" class="row">
-  <div class="col content">
-     <h2>
+<div id="person" class="row col instapaper">
+  <h1>
       {{ page.name }}
-    </h2>
-  </div>
-  <div class="col sidebar">
-    {% if page.image %}
-      <img title="{{ page.image.title }}" src="{{ page.image.url }}" alt="{{ page.image.alt }}">
-    {% endif %}
+  </h1>
+  <div class="row">
+    <div class="col content">
+     Bio
+    </div>
+    <div class="col sidebar">
+      {% if page.image %}
+        <img title="{{ page.image.title }}" src="{{ page.image.url }}" alt="{{ page.image.alt }}">
+      {% endif %}
+    </div>
   </div>
 </div>

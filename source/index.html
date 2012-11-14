@@ -3,19 +3,30 @@ layout: page
 ---
 
 <div id="posts" class="row col">
-  {% if site.posts.size == 0 %}
-    <p>Please come back later and you may have luck.</p>
-  {% else %}
-  {% for post in site.posts %}
-  <section class="post">
-    <h2>
-      <a href="{{ post.url }}">
-        {{ post.title }}
-        <i class="icon-link"></i>
-      </a>
-    </h2>
-    {{ post.content }}
-  </section>
+{% if site.posts.size == 0 %}
+  <p>Please come back later and you may have luck.</p>
+{% else %}
+{% for post in site.posts %}
+  {% assign people = post.author or post.authors %}
+  <article class="post instapaper">
+    <header class="post-header">
+      <h1>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
+      <h2>
+      {% if people %}
+        {% authors %}
+      {% endif %}
+        <span>wrote this on</span>
+        <span>{{ post.date }}</span>
+      </h2>
+    </header>
+    <div class="post-content">
+      {{ post.content }}
+    </div>
+  </article>
   {% endfor %}
   {% endif %}
 </div>

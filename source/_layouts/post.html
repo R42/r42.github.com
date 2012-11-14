@@ -4,7 +4,24 @@ menu: blog
 ---
 
 <div id="post" class="row col">
-  <h2>{{ page.title }}</h2> 
-  {{ content }}
-  <p>{% authors %}</p>
+  {% assign people = page.author or page.authors %}
+  <article class="post instapaper">
+    <header class="post-header">
+      <h1>
+        <a href="{{ page.url }}">
+          {{ page.title }}
+        </a>
+      </h1>
+      <h2>
+      {% if people %}
+        {% authors %}
+      {% endif %}
+        <span>wrote this on</span>
+        <span>{{ page.date }}</span>
+      </h2>
+    </header>
+    <div class="post-content">
+      {{ content }}
+    </div>
+  </article>
 </div>

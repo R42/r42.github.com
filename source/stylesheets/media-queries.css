@@ -5,24 +5,16 @@
    ========================================================================== */
 
 
-@media only screen and (max-width: 34em) {
-  .person { width: 25%; }
+@media only screen and (min-width: 34em) {
+
 }
 
-@media only screen and (min-width: 34em) and (max-width: 54em) {
-  .person { width: 20%; }
-  
-  #person .content { width: 66.66%; }
-  #person .sidebar { width: 33.33%; }
-  
-}
+@media only screen and (min-width: 54em) {
 
-@media only screen and (min-width: 54em) and (max-width: 74em) {
-  .person { width: 12.5%; }
 }
 
 @media only screen and (min-width: 76em) {
-  
+
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),

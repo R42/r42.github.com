@@ -87,9 +87,9 @@ module Jekyll
 
   class AuthorsTag < Liquid::Tag
 
-    def initialize(tag_name, text, tokens)
+    def initialize(tag_name, renderer, tokens)
       super
-      @text   = text
+      @renderer = renderer
       @tokens = tokens
     end
 
@@ -97,10 +97,18 @@ module Jekyll
       site = context.environments.first["site"]
       page = context.environments.first["page"]
 
-      if page
+      if @renderer.to_s == ''
+        @renderer = 'author.html'
+      end
+
+      if context['people'].to_s != ''
+        authors = ["#{context['people']}"]
+      elsif page
         authors = page['author']
         authors = [authors] if authors.is_a?(String)
+      end
 
+      if authors
         "".tap do |output|
           authors.each do |author|
             name = "#{author.downcase.gsub(' ', '-')}"
@@ -108,7 +116,7 @@ module Jekyll
             
             data['url'] = "/people/#{name}"
             data['alias'] = author
-            template = File.read(File.join(site['source'], '_includes', 'author.html'))
+            template = File.read(File.join(site['source'], '_includes', "#{@renderer}"))
 
             output << Liquid::Template.parse(template).render('author' => data)
           end
