@@ -1,0 +1,13 @@
+---
+layout: page
+---
+
+<div id="people" class="row">
+  {% for person in page.people %}
+  <div class="col person">
+    <a href="{{ site.root }}/people/{{ person[0] }}">
+      <img title="{{ person[1].image.title }}" src="{{ person[1].image.url }}" alt="{{ person[1].image.alt }}">
+    </a>
+  </div>
+  {% endfor %}
+</div>

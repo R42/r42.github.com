@@ -1,0 +1,5 @@
+*.swp
+*.swo
+
+# plugins cache
+_asset_bundler_cache

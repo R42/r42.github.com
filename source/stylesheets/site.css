@@ -1,0 +1,30 @@
+a { color: #c92c2c; text-decoration: none; }
+a:hover { color: #fff; background-color: #c92c2c; }
+
+.container { max-width: 50em; }
+
+.logo { overflow: hidden; position:relative; display: inline-block; }
+.logo span { float: left; height: 2em; text-align: center; line-height: 2em; }
+.logo:hover span { color: white; }
+
+.logo .left { color: #c92c2c; }
+.logo .right { color: #774f38; }
+
+
+
+.main-header h1 {  margin: 0; }
+.main-header .container { position: relative; }
+.main-header .container .teaser { position: absolute; top: 5px; right: 5px; }
+.main-header .container .teaser p { margin: 0; text-align: right; }
+
+.post { border-top: 1px solid #ececec; }
+.post:first-child { border-top: none; }
+.post i { visibility: hidden; }
+.post a:hover i { visibility: visible; }
+
+.person { width: 10%; opacity: .5; padding: 0; }
+.person:hover { opacity: 1; }
+.person img { width: 100%; }
+
+.main-footer .container { border-top: 1px solid #ececec; }
+.main-footer .container p { margin: 0; }

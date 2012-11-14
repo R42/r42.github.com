@@ -1,0 +1,25 @@
+
+baseurl: /
+safe: false
+auto: false
+server: false
+server_port: 4000
+destination: ../public
+
+url: http://r42.in
+title: R42
+author: R42
+email: hi@r42.in
+description: fun comes first
+permalink: /blog/:year/:month/:day/:title
+
+# Plugins
+asset_bundler:
+  compress:
+    js: false
+    css: false
+  base_path: /bundles/
+  remove_bundled: true
+  markup_templates:
+    js: "<script type='text/javascript' src='{{url}}'></script>\n"
+    css: "<link rel='stylesheet' type='text/css' href='{{url}}' />\n"
