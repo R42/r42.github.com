@@ -3,18 +3,16 @@
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-
 @media only screen and (min-width: 34em) {
-
+  
 }
 
 @media only screen and (min-width: 54em) {
-
+    .medium { display: inline; }
 }
 
 @media only screen and (min-width: 76em) {
-
+    .large { display: inline; }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
