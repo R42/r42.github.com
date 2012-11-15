@@ -1043,7 +1043,6 @@ h2, h3, h4 {
 h3, h4 {
   margin-bottom: 0.5em;
 }
-
 p, ul {
   font-size: 1em;
   line-height: 1.5;
@@ -1057,13 +1056,11 @@ iframe {
   border: 0;
   overflow: hidden;
 }
-
 .container {
   margin: 0 auto;
   max-width: 90em;
   padding: 1em 0;
 }
-
 .footer {
   padding-top: 1.5em;
 }
@@ -1091,7 +1088,7 @@ iframe {
 
 @media only screen and (min-width: 34em) {
   p, ul {
-    font-size: 1em;
+    font-size: 1.25em;
   }
   .feature:first-child,
   .info:first-child {
@@ -1136,12 +1133,14 @@ iframe {
     font-size: 1.8em;
   }
 }body { font-family: 'Droid Sans', sans-serif; color: #5b5b5b; }
+h2, h3, h4 { margin-top: .5em; }
 
 a { color: #c92c2c; text-decoration: none; display: inline-block; }
 a:hover { color: #fff; background-color: #c92c2c; }
 
 p { margin: 0; }
 img { width: 100%; }
+ol, p { font-size: 1.25em; }
 article + article { border-top: 1px solid #ececec; }
 
 .logo .l { color: #c92c2c; }
@@ -1154,17 +1153,21 @@ article + article { border-top: 1px solid #ececec; }
 .mastheader .brand { position: absolute; top: 1em; right: 1em; }
 .mastcontainer { max-width: 48em; margin: auto; overflow: hidden; }
 .mastcontainer h1 { text-align: center; margin-bottom: .5em; color: #c92c2c; }
-.mastcontainer h2 { text-align: center; font-weight: 100; font-size: 1em; margin-bottom: .25em; }
 .mastfooter { margin-top: 1em; }
 .mastfooter p { text-align: center; margin: 0; }
 
-.instapaper { margin: 4em auto 2em; padding: 2em 0; }
+.instapaper { margin: 3em auto; padding: 1em 0; }
 
+.post-header h2 { text-align: center; font-weight: 100; font-size: 1em; margin-bottom: .25em; }
 .post-content { margin: 2em auto 1em; }
 
-.person { width: 20%; padding: 0; }
+.person { width: 20%; float: left; }
 .person img { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); }
-.person img:hover { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); }/* ==========================================================================
+.person img:hover { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); }
+
+.person-header h1 { text-align: left; }
+.person-content { width: 66.6666%; }
+.person-sidebar { width: 33.3333%; }/* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
