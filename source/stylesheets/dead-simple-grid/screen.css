@@ -18,7 +18,6 @@ h2, h3, h4 {
 h3, h4 {
   margin-bottom: 0.5em;
 }
-
 p, ul {
   font-size: 1em;
   line-height: 1.5;
@@ -32,13 +31,11 @@ iframe {
   border: 0;
   overflow: hidden;
 }
-
 .container {
   margin: 0 auto;
   max-width: 90em;
   padding: 1em 0;
 }
-
 .footer {
   padding-top: 1.5em;
 }
@@ -66,7 +63,7 @@ iframe {
 
 @media only screen and (min-width: 34em) {
   p, ul {
-    font-size: 1em;
+    font-size: 1.25em;
   }
   .feature:first-child,
   .info:first-child {
