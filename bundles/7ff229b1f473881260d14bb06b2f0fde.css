@@ -1146,11 +1146,15 @@ article + article { border-top: 1px solid #ececec; }
 .logo .l { color: #c92c2c; }
 .logo .l { color: #774f38; }
 
+.large { display: none; }
+.medium { display: none; }
+
 .mastheader { font-family: 'Droid Sans', sans-serif; }
-.mastheader .home { font-size: 1em; text-align: center; font-weight: 100; margin: 1em; }
+.mastheader .home { font-size: 1.25em; text-align: center; font-weight: 100; margin: 1em; cursor: default; }
 .mastheader .hi { position: absolute; top: 1em; left: 1em; }
 .mastheader .brand { position: absolute; top: 1em; right: 1em; }
-.mastheader .brand { position: absolute; top: 1em; right: 1em; }
+.mastheader .brand img { width: auto; height: 1.25em; }
+.mastheader .brand a:hover { background-color: #fff }
 .mastcontainer { max-width: 48em; margin: auto; overflow: hidden; }
 .mastcontainer h1 { text-align: center; margin-bottom: .5em; color: #c92c2c; }
 .mastfooter { margin-top: 1em; }
@@ -1167,23 +1171,22 @@ article + article { border-top: 1px solid #ececec; }
 
 .person-header h1 { text-align: left; }
 .person-content { width: 66.6666%; }
-.person-sidebar { width: 33.3333%; }/* ==========================================================================
+.person-sidebar { width: 33.3333%; }
+/* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-
 @media only screen and (min-width: 34em) {
-
+  
 }
 
 @media only screen and (min-width: 54em) {
-
+    .medium { display: inline; }
 }
 
 @media only screen and (min-width: 76em) {
-
+    .large { display: inline; }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
