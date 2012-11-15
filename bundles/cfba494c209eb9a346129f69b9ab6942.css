@@ -1132,7 +1132,7 @@ iframe {
   h2 {
     font-size: 1.8em;
   }
-}body { font-family: 'Droid Sans', sans-serif; color: #5b5b5b; }
+}body { font-family: 'Droid Sans', sans-serif; color: #333; }
 h2, h3, h4 { margin-top: .5em; }
 
 a { color: #c92c2c; text-decoration: none; display: inline-block; }
