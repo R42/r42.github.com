@@ -2,6 +2,8 @@ active: true
 layout: person
 name: Francisco Covas
 email: fcovas@r42.in
+bio: |-
+    I'm a lover, not a fighter. And I program to.
 image: 
   url: https://secure.gravatar.com/avatar/71870f08497d12aa36e011b895f56bd3?s=400
   title: Francisco Covas
