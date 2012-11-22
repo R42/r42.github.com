@@ -1,8 +1,10 @@
 active: true
 layout: person
-name: Fábio Oliveira
+name: Fabio Oliveira
 email: foliveira@r42.in
+bio: |-
+  This is all I have to say about me in 47 chars. (Disclaimer: For the full version of me, go to http://about.me/foliveira . There's certainly more than47 characters in there)
 image: 
   url: https://secure.gravatar.com/avatar/183995cc57aeaa7252eb02b2bf7f580d?s=400
-  title: Fábio Oliveira
-  alt: Fábio Oliveira
+  title: Fabio Oliveira
+  alt: Fabio Oliveira
