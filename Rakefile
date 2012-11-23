@@ -54,7 +54,7 @@ task :new_post, :title do |t, args|
   end
 
   puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
+  open(filename, 'w:UTF-8') do |post|
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
@@ -78,7 +78,7 @@ task :new_person, :name do |t, args|
   end
 
   puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
+  open(filename, 'w:UTF-8') do |post|
     post.puts "active: true"
     post.puts "layout: person"
     post.puts "name: #{name}"
