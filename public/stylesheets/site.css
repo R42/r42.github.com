@@ -1,0 +1,40 @@
+body { font-family: 'Droid Sans', sans-serif; color: #333; }
+h2, h3, h4 { margin-top: .5em; }
+
+a { color: #c92c2c; text-decoration: none; display: inline-block; }
+a:hover { color: #fff; background-color: #c92c2c; }
+
+p { margin: 0; }
+img { width: 100%; }
+ol, p { font-size: 1.25em; }
+article + article { border-top: 1px solid #ececec; }
+
+.logo .l { color: #c92c2c; }
+.logo .l { color: #774f38; }
+
+.large { display: none; }
+.medium { display: none; }
+
+.mastheader { font-family: 'Droid Sans', sans-serif; }
+.mastheader .home { font-size: 1.25em; text-align: center; font-weight: 100; margin: 1em; cursor: default; }
+.mastheader .hi { position: absolute; top: 1em; left: 1em; }
+.mastheader .brand { position: absolute; top: 1em; right: 1em; }
+.mastheader .brand img { width: auto; height: 1.25em; }
+.mastheader .brand a:hover { background-color: #fff }
+.mastcontainer { max-width: 48em; margin: auto; overflow: hidden; }
+.mastcontainer h1 { text-align: center; margin-bottom: .5em; color: #c92c2c; }
+.mastfooter { margin-top: 1em; }
+.mastfooter p { text-align: center; margin: 0; }
+
+.instapaper { margin: 3em auto; padding: 1em 0; }
+
+.post-header h2 { text-align: center; font-weight: 100; font-size: 1em; margin-bottom: .25em; }
+.post-content { margin: 2em auto 1em; }
+
+.person { width: 20%; float: left; }
+.person img { -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%); -ms-filter: grayscale(100%); -o-filter: grayscale(100%); }
+.person img:hover { -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%); -ms-filter: grayscale(0%); -o-filter: grayscale(0%); }
+
+.person-header h1 { text-align: left; }
+.person-content { width: 66.6666%; }
+.person-sidebar { width: 33.3333%; }
